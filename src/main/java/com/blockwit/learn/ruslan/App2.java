@@ -9,8 +9,8 @@ public class App2 {
 			
 	
 	for (int i = 0; i < monthSalaries.length; i++) {
-	double sum = monthSalaries[i] / 30;
-	System.out.println(sum);
+	double average = monthSalaries[i] / 30;
+	System.out.println(average);
 
 	}
 	
