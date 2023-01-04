@@ -10,13 +10,13 @@ public class App8 {
 			if (( i + 1) % 2 == 0) {
 				System.out.println(names[i]);
 			}
-			if ((i + 1) % 5 == 0) {
+				if ((i + 1) % 5 == 0) {
 				System.out.println(names[i]);
 			}
 			
 		}
 		
 
+	}
 
-}
 }
