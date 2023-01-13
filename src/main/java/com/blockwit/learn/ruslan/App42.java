@@ -10,7 +10,7 @@ public class App42 {
 	
 	
 
-	Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 	
 
 		int computerNumber = (int) (Math.random() * 10);
@@ -20,15 +20,15 @@ public class App42 {
 	
 
 		
-	int firstResult = (int) (number - secretNumber);
-	int secondResult = (int) (computerNumber - secretNumber);
+		int firstResult = (int) (number - secretNumber);
+		int secondResult = (int) (computerNumber - secretNumber);
 
-	if ( firstResult < secondResult ) {
-		System.out.println("Выиграл пользователь");
-	}
-	else {
-		System.out.println("Выиграл компьютер");
-	}
+		if ( firstResult < secondResult ) {
+			System.out.println("Выиграл пользователь");
+		}
+		else {
+			System.out.println("Выиграл компьютер");
+		}
 
  
 	
