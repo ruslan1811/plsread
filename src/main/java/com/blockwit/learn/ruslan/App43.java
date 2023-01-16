@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class App43 {
 	public static void main(String args[]) {
 
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0, j=0, k= 0; i < 3; i++) {
 
 			int secretNumber = (int) (Math.random() * 10);
 	
@@ -25,25 +25,25 @@ public class App43 {
 			// Calculate results
 			
 			
-			int j = 0;
+		/*	int j = 0;
 			int k = 0;
 
-			
+		*/	
 		
 			
 			if (firstResult < secondResult) {
 				j = j +1;
-			       System.out.println("result" + j);	
+			       System.out.println("У компьютера очков:" + j);	
 			}
-			else {
+			else if (secondResult < firstResult) {
 				k = k + 1;
-				System.out.println("result b " + k);
+				System.out.println("У пользователя очков: " + k);
 			}
 
-			if (j ==2) {
+			if (j >= 2) {
 				System.out.println("Выиграл компьютер");
 			}
-			else if (k==2) {
+			else if (k >= 2) {
 				System.out.println("Выиграл пользователь");
 			}		
 
