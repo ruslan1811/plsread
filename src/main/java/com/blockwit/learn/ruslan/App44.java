@@ -15,20 +15,20 @@ public class App44 {
 
 		while (gameSticks > 0) {
 			
-		if (gameSticks < 3) {
-			Random r = new Random();
-			sticksLimit = r.nextInt(gameSticks) + 1;
-		}			
-		else {
-			Random l = new Random();
-			sticksLimit = l.nextInt(3) + 1;
-		}
+			if (gameSticks < 3) {
+				Random r = new Random();
+				sticksLimit = r.nextInt(gameSticks) + 1;
+					}			
+			else {
+				Random l = new Random();
+				sticksLimit = l.nextInt(3) + 1;
+			    }
 		
-		playerSticks = (int) (Math.random() * sticksLimit) + 1;
+			playerSticks = (int) (Math.random() * sticksLimit) + 1;
 		
-		System.out.println("Компьютер взял " + playerSticks + " палочек");
+			System.out.println("Компьютер взял " + playerSticks + " палочек");
 
-		gameSticks = gameSticks - playerSticks;
+			gameSticks = gameSticks - playerSticks;
 		
 
 
@@ -36,19 +36,22 @@ public class App44 {
 
 
 
-		if (gameSticks == 0) {
-			System.out.println("Компьютер  проиграл");
-			break;
-		}
+			if (gameSticks == 0) {
+			
+				System.out.println("Компьютер  проиграл");
+				break;
+					
+					    }
 			
 		//Ходит игрок
 		
-		if (gameSticks < 3) {
+			if (gameSticks < 3) {
 			
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Введите число от 1  до " + gameSticks);
+				Scanner sc = new Scanner(System.in);
 			
-			playerSticks = sc.nextInt();
+				System.out.println("Введите число от 1  до " + gameSticks);
+			
+				playerSticks = sc.nextInt();
 
 		/*	if (sc.nextInt() > sticksLimit || sc.nextInt() == 0 ) {
 				System.out.println("Число не ок");
@@ -57,28 +60,34 @@ public class App44 {
 			}*/
 			
 
-			System.out.println("Вы взяли " + playerSticks + " палочек");
-		}
-		else {
+				System.out.println("Вы взяли " + playerSticks + " палочек");
+				
+				        	}
+			else {
 			
-			Scanner st = new Scanner(System.in);
-			System.out.println("Введите число от 1 до 3");
+				Scanner st = new Scanner(System.in);
+			
+				System.out.println("Введите число от 1 до 3");
 
-			playerSticks = st.nextInt();
+				playerSticks = st.nextInt();
 			
 			
 
-			System.out.println("Вы взяли " + playerSticks + " палочек");
+				
+				System.out.println("Вы взяли " + playerSticks + " палочек");
 
 
 		}	
 			
+		
+		
+		
 		gameSticks = gameSticks - playerSticks;
 
 		if (gameSticks == 0) {
 			System.out.println("Игрок проиграл");
 			break;
-		}
+				}
 
 		
 
