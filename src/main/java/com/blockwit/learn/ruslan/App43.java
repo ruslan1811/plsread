@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class App43 {
 	public static void main(String args[]) {
 
-		for (int i = 0, j=0, k= 0; i < 3; i++) {
+	for (int i = 0, j=0, k= 0; i < 3; i++) {
 
 			int secretNumber = (int) (Math.random() * 10);
 	
@@ -27,7 +27,6 @@ public class App43 {
 			
 		/*	int j = 0;
 			int k = 0;
-
 		*/	
 		
 			
@@ -56,20 +55,17 @@ public class App43 {
 			else if ( k >=2) {
 				System.out.println("Выиграл человек");
 			}
-
 		*/
 
 
 		}	
+	
 
 
-		
-		
-		
-		
+
+
+
 
 
 	}
-
-
 }
