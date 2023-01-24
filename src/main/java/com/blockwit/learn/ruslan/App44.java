@@ -16,12 +16,12 @@ public class App44 {
 		while (gameSticks > 0) {
 			
 			if (gameSticks < 3) {
-				Random r = new Random();
-				sticksLimit = r.nextInt(gameSticks) + 1;
+				//Random r = new Random();
+				sticksLimit = gameSticks;
 					}			
 			else {
-				Random l = new Random();
-				sticksLimit = l.nextInt(3) + 1;
+				//Random l = new Random();
+				sticksLimit = 3;
 			    }
 		
 			playerSticks = (int) (Math.random() * sticksLimit) + 1;
@@ -53,12 +53,16 @@ public class App44 {
 			
 				playerSticks = sc.nextInt();
 
+				
+
 		/*	if (sc.nextInt() > sticksLimit || sc.nextInt() == 0 ) {
 				System.out.println("Число не ок");
 				System.out.println("Введите число от 1 до " + gameSticks);
 				playerSticks = sc.nextInt();
 			}*/
 			
+
+
 
 				System.out.println("Вы взяли " + playerSticks + " палочек");
 				
@@ -67,17 +71,29 @@ public class App44 {
 			
 				Scanner st = new Scanner(System.in);
 			
-				System.out.println("Введите число от 1 до 3");
+				System.out.println("Введите число от 1 до " + sticksLimit);
 
 				playerSticks = st.nextInt();
 			
-			
+		
 
 				
+			//	System.out.println("Вы взяли " + playerSticks + " палочек");
+			
+			
+				while (playerSticks > sticksLimit | playerSticks == 0 ) {
+
+				System.out.println("Not OK. Введите число от 1 до " + sticksLimit);
+				playerSticks = st.nextInt();
+			//	System.out.println("Вы взяли " + playerSticks + " палочек");
+
+				}	
+
+	
 				System.out.println("Вы взяли " + playerSticks + " палочек");
-
-
-		}	
+		
+		
+			}	
 			
 		
 		
