@@ -1,7 +1,6 @@
-package com.blockwit.learn.ruslan;
+package com.blockwit.learn.ruslan.task47;
 
-
-class ExtTask {
+class WordsHelper {
 
     int number;
     int word;
@@ -45,30 +44,3 @@ class ExtTask {
     }
 
 }
-
-
-
-public class WordsHelper {
-
-
-    public static void main (String args[])  {
-
-        ExtTask word = new ExtTask();
-        //word1.makeWord(1);
-
-       // word1.printText();
-        //word1.printRubleWord(4);
-
-    for (int i=1; i <11; i++) {
-
-        word.printRubleWord(i);
-
-    }
-
-
-
-    }
-
-}
-
-
