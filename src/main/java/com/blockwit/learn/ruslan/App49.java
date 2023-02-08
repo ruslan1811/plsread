@@ -15,7 +15,8 @@ public class App49 {
 
         int[] resultArray = new int[firstArray.length + secondArray.length];
 
-        int maxLen = Math.max(firstArray.length, secondArray.length), j =0;
+        int maxLen = Math.max(firstArray.length, secondArray.length);
+        int j =0;
         System.out.println(maxLen);
 
         for (int i = 0; i < maxLen; i++) {
@@ -36,7 +37,7 @@ public class App49 {
         for (int i =0; i < firstArray.length; i++) {
             System.out.println(resultArray[i]);
         }
-        
+
     }
 
 }
