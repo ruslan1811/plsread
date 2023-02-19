@@ -199,15 +199,15 @@ public class MyArrayListExample {
         list.addName("Джейн");
         list.addName("Савелий");
         list.addName("Урсула");
-        list.addName("Елизавета");
-        list.addName("Прасковья");
+        list.addName( "Елизавета");
+        list.addName( "Прасковья");
 
 
+ 
 
+        list.getStudent( 1);
 
-        list.getStudent(1);
-
-System.out.println( list.getStudent(4));
+System.out.println( list.getStudent( 4));
 
 
 
