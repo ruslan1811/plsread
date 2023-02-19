@@ -83,7 +83,6 @@ public class MyArrayListExample {
         list.addName("Аксинья");
         list.addName("Ерофей");
         list.addName("Александра");
-        list.addName("Изольда");
         list.addName("Мария");
         list.addName("Дарья");
         list.addName("Джейн");
@@ -149,58 +148,7 @@ public class MyArrayListExample {
         list.addName("Робинзон");
         list.addName("Виолетта");
         list.addName("Аксинья");
-        list.addName("Ерофей");
-        list.addName("Александра");
-        list.addName("Изольда");
-        list.addName("Мария");
-        list.addName("Дарья");
-        list.addName("Джейн");
-        list.addName("Савелий");
-        list.addName("Урсула");
-        list.addName("Елизавета");
-        list.addName("Прасковья");
-        list.addName("Георгий");
-        list.addName("Василий");
-        list.addName("Макар");
-        list.addName("Савелий");
-        list.addName("Робинзон");
-        list.addName("Виолетта");
-        list.addName("Аксинья");
-        list.addName("Ерофей");
-        list.addName("Александра");
-        list.addName("Изольда");
-        list.addName("Мария");
-        list.addName("Дарья");
-        list.addName("Джейн");
-        list.addName("Савелий");
-        list.addName("Урсула");
-        list.addName("Елизавета");
-        list.addName("Прасковья");
-        list.addName("Георгий");
-        list.addName("Василий");
-        list.addName("Макар");
-        list.addName("Савелий");
-        list.addName("Робинзон");
-        list.addName("Виолетта");
-        list.addName("Аксинья");
-        list.addName("Ерофей");
-        list.addName("Александра");
-        list.addName("Изольда");
-        list.addName("Мария");
-        list.addName("Дарья");
-        list.addName("Джейн");
-        list.addName("Савелий");
-        list.addName("Урсула");
-        list.addName("Елизавета");
-        list.addName("Прасковья");
-        list.addName("Изольда");
-        list.addName("Мария");
-        list.addName("Дарья");
-        list.addName("Джейн");
-        list.addName("Савелий");
-        list.addName("Урсула");
-        list.addName( "Елизавета");
-        list.addName( "Прасковья");
+
 
 
 
