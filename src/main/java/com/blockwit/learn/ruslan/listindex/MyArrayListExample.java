@@ -203,7 +203,7 @@ public class MyArrayListExample {
         list.addName( "Прасковья");
 
 
- 
+
 
         list.getStudent( 1);
 
