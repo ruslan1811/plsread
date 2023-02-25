@@ -4,12 +4,16 @@ import java.util.Date;
 
 public class TestList {
  public static void main (String args[]) {
-
      List list = new List();
+     fixTime();
      testCells();
-     System.out.println(list.calculateTime());
+     list.calculateTime();
+     }
 
- }
+     public static long fixTime() {
+       long fixStart = System.currentTimeMillis();
+         return fixStart;
+     }
 
     public static void testCells() {
         List varList = new List();
