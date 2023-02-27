@@ -7,7 +7,6 @@ public class TestList {
         List list = new List();
         testPerformance();
     }
-
     public  static long testPerformance() {
         long startTime = System.currentTimeMillis();
         List varList = new List();
@@ -20,6 +19,5 @@ public class TestList {
        System.out.println(result);
        return result;
     }
-
 
 }
