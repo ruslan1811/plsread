@@ -9,10 +9,10 @@ public class TestList {
     }
     public  static long testPerformance() {
         long startTime = System.currentTimeMillis();
-        List varList = new List();
-        varList.list = new int[100000];
-        for (int i = 0; i < varList.list.length; i++) {
-            System.out.println(varList.list[i]);
+        List copyList = new List();
+        copyList.list = new int[100000];
+        for (int i = 0; i < copyList.list.length; i++) {
+            System.out.println(copyList.list[i]);
         }
         long finishTime = System.currentTimeMillis();
         long result = finishTime - startTime;
