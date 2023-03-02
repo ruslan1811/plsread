@@ -10,7 +10,7 @@ public class TestList {
     public  static long testPerformance() {
         long startTime = System.currentTimeMillis();
         List copyList = new List();
-        copyList.list = new int[100000];
+        copyList.list = new String[100000];
         for (int i = 0; i < copyList.list.length; i++) {
             System.out.println(copyList.list[i]);
         }
@@ -19,5 +19,7 @@ public class TestList {
        System.out.println(result);
        return result;
     }
+
+
 
 }
