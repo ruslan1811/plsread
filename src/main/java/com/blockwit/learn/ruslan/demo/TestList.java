@@ -17,9 +17,6 @@ public class TestList {
         list.insert(40, "txt");
 
 
-
     }
-
-
 
 }

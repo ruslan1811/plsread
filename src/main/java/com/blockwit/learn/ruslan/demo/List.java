@@ -30,6 +30,5 @@ public class List {
 		list = copiedArray;
 		return list[index];
 
-
 	}
 }
