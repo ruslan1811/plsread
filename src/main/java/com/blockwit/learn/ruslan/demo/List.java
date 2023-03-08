@@ -18,4 +18,18 @@ public class List {
 		return list[index];
 	}
 
+	public int getSize() {
+		return index;
+	}
+
+	public String insert(int index, String text) {
+		String[] copiedArray  = Arrays.copyOf(list, list.length + 1);
+		System.arraycopy(list, 0, copiedArray, 0, index-1);
+		copiedArray[index] = text;
+		System.arraycopy(list, index, copiedArray, index+1, (copiedArray.length-1)- index);
+		list = copiedArray;
+		return list[index];
+
+
+	}
 }

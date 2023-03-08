@@ -1,35 +1,25 @@
 package com.blockwit.learn.ruslan.demo;
 
+import java.util.Date;
+
 public class TestList {
-	public static void main(String args[]) {
-		testAddSingle();
-		testAddMultiple();
-	}
+    public static void main(String args[]) {
+        List list = new List();
+        long startTime = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            list.add("Text");
+        }
+        long endTime = System.currentTimeMillis();
+        long result = endTime - startTime;
+        System.out.println(result);
+        System.out.println(list.getSize());
 
-	public static void testAddSingle() {
-		List list = new List();
-		String testElement = "simpleElement";
-		list.add(testElement);
-		if (list.get(0).equals(testElement)) {
-			System.out.println("Test successfully passed");
-		} else {
-			System.err.println("Test failed");
-		}
-	}
+        list.insert(40, "txt");
 
-	public static void testAddMultiple() {
-		List list = new List();
-		for (int i = 0; i < 100; i++) {
-			list.add(i + "");
-		}
 
-		for (int i = 0; i < 100; i++) {
-			if (!list.get(i).equals(i + "")) {
-				System.err.println("Test failed");
-				return;
-			}
-		}
-		System.out.println("Test successfully passed");
-	}
+
+    }
+
+
 
 }
