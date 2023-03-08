@@ -12,11 +12,68 @@ public class TestList {
         long endTime = System.currentTimeMillis();
         long result = endTime - startTime;
         System.out.println(result);
-        System.out.println(list.getSize());
 
         list.insert(40, "txt");
 
+        testAddSingle();
+        testAddMultiple();
+        testSize();
+        testInsert();
+    }
+
+
+    public static void testAddSingle() {
+        List list = new List();
+        String testElement = "simpleElement";
+        list.add(testElement);
+        if (list.get(0).equals(testElement)) {
+            System.out.println("Test successfully passed");
+        } else {
+            System.err.println("Test failed");
+        }
+    }
+
+    public static void testAddMultiple() {
+        List list = new List();
+        for (int i = 0; i < 100; i++) {
+            list.add(i + "");
+        }
+
+        for (int i = 0; i < 100; i++) {
+            if (!list.get(i).equals(i + "")) {
+                System.err.println("Test failed");
+                return;
+            }
+        }
+        System.out.println("Test successfully passed");
+    }
+
+    public static void testSize() {
+        List list = new List();
+        int index = 0;
+
+        for (int i = 0; i < 100; i++) {
+            list.add(i + "");
+            index++;
+        }
+        if (list.getSize() == index) {
+            System.out.println("Test successfully passed");
+
+        } else {
+            System.err.println("Test failed");
+        }
 
     }
+
+    public static void testInsert() {
+        List list = new List();
+        String text = "texxt";
+        if (list.insert(1, text) == text ) {
+            System.out.println("Test successfully passed");
+        } else {
+            System.err.println("Test failed");
+        }
+    }
+
 
 }

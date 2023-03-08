@@ -6,6 +6,7 @@ public class List {
 	private static String[] list = new String[1];
 	private int index = 0;
 
+
 	public void add(String item) {
 		if (index == list.length) {
 			list = Arrays.copyOf(list, list.length + (int) (list.length * 0.2) + 1);
