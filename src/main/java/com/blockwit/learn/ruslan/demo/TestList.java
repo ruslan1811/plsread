@@ -5,18 +5,9 @@ import java.util.Date;
 public class TestList {
     public static void main(String args[]) {
         List list = new List();
-        long startTime = System.currentTimeMillis();
-        for (int i = 0; i < 100000; i++) {
-            list.add("Text");
-        }
-        long endTime = System.currentTimeMillis();
-        long result = endTime - startTime;
-        System.out.println(result);
-
-        list.insert(40, "txt");
-
         testAddSingle();
         testAddMultiple();
+        performanceTest();
         testSize();
         testInsert();
     }
@@ -48,6 +39,20 @@ public class TestList {
         System.out.println("Test successfully passed");
     }
 
+
+
+    public static long performanceTest() {
+        List list = new List();
+        long startTime = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            list.add("Text");
+        }
+        long endTime = System.currentTimeMillis();
+        long result = endTime - startTime;
+        return result;
+    }
+
+
     public static void testSize() {
         List list = new List();
         int index = 0;
@@ -67,8 +72,12 @@ public class TestList {
 
     public static void testInsert() {
         List list = new List();
+        for (int i = 0; i < 5; i++) {
+            list.add("Text");
+        }
         String text = "texxt";
-        if (list.insert(1, text) == text ) {
+        list.insert(2, text);
+       if(list.get(2).equals(text)) {
             System.out.println("Test successfully passed");
         } else {
             System.err.println("Test failed");
