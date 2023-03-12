@@ -3,7 +3,7 @@ package com.blockwit.learn.ruslan.demo;
 import java.util.Arrays;
 
 public class List {
-	private static String[] list = new String[1];
+	private  String[] list = new String[1];
 	private int index = 0;
 
 

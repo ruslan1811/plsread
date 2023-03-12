@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class TestList {
     public static void main(String args[]) {
-        List list = new List();
         testAddSingle();
         testAddMultiple();
         performanceTest();
@@ -72,17 +71,23 @@ public class TestList {
 
     public static void testInsert() {
         List list = new List();
-        for (int i = 0; i < 5; i++) {
-            list.add("Text");
+        int index = 5;
+        String addText = "Text";
+        for (int i = 0; i < index; i++) {
+            list.add(addText);
         }
         String text = "texxt";
         list.insert(2, text);
-       if(list.get(2).equals(text)) {
-            System.out.println("Test successfully passed");
+       if(list.get(2) == text & list.getSize() == index) {
+           for (int i =0; i <= index; i ++ ) {
+               if (list.get(i) == addText & i == index ) {
+                   System.out.println("Test successfully passed");
+               }
+           }
+
         } else {
             System.err.println("Test failed");
         }
     }
-
-
+    
 }
